@@ -39586,3 +39586,994 @@ ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
   
 
 Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-14 14:26:30 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (8.6ms)
+Rendered layouts/_stylesheets.html.erb (34.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (35.7ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 147ms (Views: 145.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 14:26:30 +0530
+Served asset /screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 14:26:30 +0530
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 14:26:30 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 14:26:30 +0530
+Served asset /logo.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 14:26:30 +0530
+Served asset /print.css - 304 Not Modified (2ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-14 14:43:46 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.6ms)
+Rendered layouts/_stylesheets.html.erb (4.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (16.8ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 14:43:47 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 14:43:47 +0530
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 14:43:47 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 14:43:47 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 14:43:47 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-02-14 14:43:48 +0530
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Rendered layouts/_stylesheets.html.erb (5.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (14.8ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 14:43:49 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 14:43:49 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 14:43:49 +0530
+Served asset /defaults.js - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 14:43:49 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 14:43:49 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 14:44:55 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 14:45:31 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 14:48:03 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 14:48:19 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 14:48:21 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 14:48:33 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 14:48:37 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/auth" for 127.0.0.1 at 2017-02-14 14:49:04 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 14:49:14 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:02:58 +0530
+
+
+Started GET "/auth" for 127.0.0.1 at 2017-02-14 15:06:22 +0530
+
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:06:31 +0530
+
+
+Started GET "/users/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:06:47 +0530
+
+ActionController::RoutingError (No route matches [GET] "/users/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:06:52 +0530
+
+
+Started GET "/users/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:07:11 +0530
+
+ActionController::RoutingError (No route matches [GET] "/users/auth/salesforce"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:07:23 +0530
+
+
+Started GET "/users" for 127.0.0.1 at 2017-02-14 15:16:14 +0530
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 97ms
+
+NameError (undefined local variable or method `signin_path' for #<UsersController:0x007febc2574670>):
+  app/helpers/sessions_helper.rb:30:in `deny_access'
+  app/controllers/users_controller.rb:61:in `authenticate'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-14 15:16:14 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.3ms)
+Rendered layouts/_stylesheets.html.erb (56.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (16.8ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 153ms (Views: 152.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:16:14 +0530
+Served asset /screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:16:14 +0530
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:16:14 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:16:15 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:16:15 +0530
+Served asset /print.css - 304 Not Modified (1ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:16:34 +0530
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:21:46 +0530
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:21:56 +0530
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:22:57 +0530
+
+
+Started GET "/auth/salesforce/callback" for 127.0.0.1 at 2017-02-14 15:22:59 +0530
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:23:18 +0530
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:23:26 +0530
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:25:04 +0530
+
+
+Started GET "/login" for 127.0.0.1 at 2017-02-14 15:25:07 +0530
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Rendered layouts/_stylesheets.html.erb (104.5ms)
+  [1m[36mUser Load (17.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (67.3ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 269ms (Views: 235.7ms | ActiveRecord: 33.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:25:07 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:25:07 +0530
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:25:07 +0530
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:25:07 +0530
+Served asset /logo.png - 304 Not Modified (29ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:25:07 +0530
+Served asset /print.css - 304 Not Modified (1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-02-14 15:25:25 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sUd+s5ckro2MCrfADH2tb+HQvWKkfquzpFnYDWqep4E=", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Rendered text template (0.0ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (19.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "admin" boolean DEFAULT 'f') 
+  [1m[36m (0.2ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (29.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170210091921')[0m
+  [1m[35m (32.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209065204')
+  [1m[36m (13.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209090132')[0m
+  [1m[35m (45.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209102116')
+  [1m[36m (15.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209112652')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1[0m
+  [1m[35mSQL (53.2ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example@railstutorial.org"], ["encrypted_password", "3c5e2acf0a05932cb1fdb77a849c1c33f466b0d2f4f679d332d474367d3b7042"], ["name", "Example User"], ["salt", "3c7aa45149657c9becf1456f9ce797d82b27201faae069c7080f31d9d95647d7"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "admin" = 't', "updated_at" = '2017-02-14 09:56:12.297005' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-1@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-1@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Jamel Sanford"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-2@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-2@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Tomas Kemmer"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-3@railstutorial.org') LIMIT 1
+  [1m[36mSQL (17.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-3@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Carissa O'Keefe"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-4@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-4@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Rebecca Kub"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-5@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-5@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Yadira Casper"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-6@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-6@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Miss Carey Zboncak"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-7@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-7@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Lucius Kutch"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-8@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-8@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Lindsey Wehner"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-9@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-9@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Kenyon Durgan"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-10@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-10@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Litzy Orn"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-11@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-11@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Asa Wiza"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-12@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-12@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Mrs. Branson Wilderman"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-13@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-13@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Mrs. Floyd Keeling"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-14@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-14@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Mohammad McKenzie"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-15@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-15@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Maurine Jast"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-16@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-16@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Emmy Cummerata"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-17@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-17@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Brady Mraz"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-18@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-18@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Tamia Walter DDS"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-19@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-19@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Raquel Corwin"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-20@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-20@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Kylee Gerhold"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-21@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-21@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Susan Schmitt"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-22@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-22@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Loyce Zboncak"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-23@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-23@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Beatrice Beahan"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-24@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-24@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Dr. Gabriel Kuhn"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-25@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-25@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Mandy Bauch"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-26@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-26@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Hermina Emard"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-27@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-27@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "David Hodkiewicz"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-28@railstutorial.org') LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-28@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Mrs. Maiya Kohler"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-29@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-29@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Katelynn Keebler"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-30@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-30@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Dee Leuschke"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-31@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-31@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Tyree Douglas"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-32@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-32@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Roselyn Batz"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-33@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-33@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Clemmie Wunsch"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-34@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-34@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Orlo Crist"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-35@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-35@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Ofelia Paucek PhD"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-36@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-36@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Lenny Zieme"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-37@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-37@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Bethany Murazik"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-38@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-38@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Tommie Romaguera"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-39@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-39@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Ms. Justice Dibbert"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-40@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-40@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Ophelia Daniel"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-41@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-41@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Hallie Schoen"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-42@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-42@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Efrain Lockman"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-43@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-43@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Cornell Okuneva"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-44@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-44@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Miss Gisselle Olson"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-45@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-45@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Antwon Kirlin"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-46@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-46@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Kali Upton DDS"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-47@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-47@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Efren Donnelly"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-48@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-48@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Mark Considine"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-49@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-49@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Lindsay Brekke"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-50@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-50@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Mr. Terence Oberbrunner"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-51@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-51@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Zelma Bauch"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-52@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-52@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Gennaro Kassulke"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-53@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-53@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Torey Block"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-54@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-54@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Elwin Cassin"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-55@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-55@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Orval Upton"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-56@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-56@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Bethany Bernier"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-57@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-57@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Marquis Kerluke"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-58@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-58@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Mr. Boris Bogisich"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-59@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-59@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Hilbert Casper DVM"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-60@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-60@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Lincoln Hills"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-61@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-61@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Vella Eichmann"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-62@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-62@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Connie Bauch"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-63@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-63@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Shannon Schroeder"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-64@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-64@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Maudie Maggio"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-65@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-65@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Hertha Batz PhD"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-66@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-66@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Estella Ondricka"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-67@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-67@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Marisa Oberbrunner"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-68@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-68@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Diamond Schuster"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-69@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-69@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Keenan Legros"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-70@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-70@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Taryn Bernhard"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-71@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-71@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Tyrese Considine"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-72@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-72@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Mrs. Dejon Moore"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-73@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-73@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Raul Hauck"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-74@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-74@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Dayana Terry"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-75@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-75@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Diamond Senger"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-76@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-76@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Kaylah Mueller"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-77@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-77@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Dorothea Johnston"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-78@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-78@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Jaycee Reichert"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-79@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-79@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Nettie Howell"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-80@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-80@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Geovanny Kuphal"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-81@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-81@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Ivory Little"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-82@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-82@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Rupert Roberts"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-83@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-83@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Jasmin Wilkinson DVM"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-84@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-84@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Joanne Marvin"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-85@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-85@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Nikki Hoppe"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-86@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-86@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Anahi Cronin"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-87@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-87@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Nya Stroman"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-88@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-88@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Cheyanne Morissette"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-89@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-89@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Rosalind Labadie"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-90@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-90@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Max Skiles"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-91@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-91@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Hailee Bauch"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-92@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-92@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Marjolaine Kertzmann"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-93@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-93@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Helga Gerlach PhD"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-94@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-94@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Loren Grady"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-95@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-95@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Jalyn Hodkiewicz"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-96@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-96@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Maverick Kuhic MD"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-97@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-97@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Eino Schulist"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-98@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-98@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Hilario Howe"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example-99@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-14 09:56:12 UTC], ["email", "example-99@railstutorial.org"], ["encrypted_password", "46cc8e3e12d3f649800ea7f1eb50c87d3fa7a167d8170c6f60fc9a6063121a0c"], ["name", "Erna Jewess"], ["salt", "fb99cb8af0d372f809d3dcd87ada260ed40673e6af9fd73a34e5c82e4f92feae"], ["updated_at", 2017-02-14 09:56:12 UTC]]
+
+
+Started GET "/login" for 127.0.0.1 at 2017-02-14 15:26:19 +0530
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Rendered layouts/_stylesheets.html.erb (4.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (16.1ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:26:20 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:26:20 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:26:20 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:26:20 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:26:20 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-02-14 15:26:21 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sUd+s5ckro2MCrfADH2tb+HQvWKkfquzpFnYDWqep4E=", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-02-14 15:27:07 +0530
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Rendered layouts/_stylesheets.html.erb (4.3ms)
+  [1m[36mUser Load (14.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (32.6ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 60ms (Views: 43.9ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:27:07 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:27:07 +0530
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:27:07 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:27:07 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:27:07 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-02-14 15:27:17 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sUd+s5ckro2MCrfADH2tb+HQvWKkfquzpFnYDWqep4E=", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Rendered text template (0.0ms)
+Redirected to 
+Completed 500 Internal Server Error in 2ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/sessions_controller.rb:11:in `create'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:28:16 +0530
+Served asset /defaults.js - 404 Not Found (28ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-02-14 15:28:18 +0530
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Rendered layouts/_stylesheets.html.erb (4.5ms)
+  [1m[36mUser Load (15.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (32.8ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 38.9ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:28:18 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:28:18 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:28:18 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:28:18 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:28:18 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-02-14 15:28:23 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sUd+s5ckro2MCrfADH2tb+HQvWKkfquzpFnYDWqep4E=", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Rendered text template (0.0ms)
+Redirected to 
+Completed 500 Internal Server Error in 3ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/sessions_controller.rb:11:in `create'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-14 15:29:23 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.1ms)
+Rendered layouts/_stylesheets.html.erb (5.8ms)
+  [1m[36mUser Load (16.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (38.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 212ms (Views: 194.9ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:29:23 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:29:23 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:29:23 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:29:23 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:29:24 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:29:32 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-14 15:37:54 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (4.9ms)
+Rendered layouts/_stylesheets.html.erb (7.3ms)
+  [1m[36mUser Load (9.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (37.9ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 153ms (Views: 142.6ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:37:55 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:37:55 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:37:55 +0530
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:37:55 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:37:55 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:38:18 +0530
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:39:48 +0530
+Served asset /defaults.js - 404 Not Found (33ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:39:54 +0530
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:40:40 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4twwXicuAMPARr5Wryspj7xNJbBn_y5e.yKgu5.2Pix8hHMZsEQ%3D%3D&state=6dd8fddb277d70f633a297144e2cfeb50e36b6206c00cd0e" for 127.0.0.1 at 2017-02-14 15:41:29 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"display"=>"page", "code"=>"aPrxFYRxG6g7t8p5hObeukV4twwXicuAMPARr5Wryspj7xNJbBn_y5e.yKgu5.2Pix8hHMZsEQ==", "state"=>"6dd8fddb277d70f633a297144e2cfeb50e36b6206c00cd0e", "provider"=>"salesforce"}
+Rendered text template (0.0ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-14 15:44:23 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.2ms)
+Rendered layouts/_stylesheets.html.erb (56.7ms)
+  [1m[36mUser Load (20.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (61.5ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 200ms (Views: 178.2ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:44:24 +0530
+Served asset /screen.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:44:24 +0530
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:44:24 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:44:24 +0530
+Served asset /logo.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:44:24 +0530
+Served asset /print.css - 304 Not Modified (2ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:45:25 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4twTSoiGTaeBIbUlxvKJfuy36MUPRrwxd9AExokDbslDcR_s._A%3D%3D&state=f1933514fde49466f9e8eaac4ad47706442ee66994554ead" for 127.0.0.1 at 2017-02-14 15:45:26 +0530
+
+SyntaxError (/Users/Sandeep/salesforce omni/salesforce/app/controllers/sessions_controller.rb:32: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:45:38 +0530
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:45:42 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4t1GJNyGEEQTFWUYDZ8HwFu.psi5ohbNnqkkrF5f9OeUZMZgJjA%3D%3D&state=a46716492d7048fbe78e844ce9efdac4d49b20b1d12f090d" for 127.0.0.1 at 2017-02-14 15:45:42 +0530
+
+SyntaxError (/Users/Sandeep/salesforce omni/salesforce/app/controllers/sessions_controller.rb:32: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:45:50 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4t1Mq4KEIti_psmxXezzc3XVOY6naCyzcpuy9lgM_baLrB8rAgg%3D%3D&state=5389bb2a4b7b09161000523d134576701d868e84f4abc752" for 127.0.0.1 at 2017-02-14 15:45:50 +0530
+
+SyntaxError (/Users/Sandeep/salesforce omni/salesforce/app/controllers/sessions_controller.rb:32: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-14 15:46:19 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.0ms)
+Rendered layouts/_stylesheets.html.erb (36.7ms)
+  [1m[36mUser Load (20.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (56.6ms)
+Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 146ms (Views: 124.6ms | ActiveRecord: 21.3ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:46:20 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:46:20 +0530
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:46:20 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:46:20 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:46:20 +0530
+Served asset /print.css - 304 Not Modified (4ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-14 15:46:26 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4t5UxFr9qL2vHl2ZIvhAdVp.WnteizZClxjUHAFFxx0yHZoWdFA%3D%3D&state=a93283bffc4448746b77a4dc9adc35fcd33860b824d0db42" for 127.0.0.1 at 2017-02-14 15:46:26 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"display"=>"page", "code"=>"aPrxFYRxG6g7t8p5hObeukV4t5UxFr9qL2vHl2ZIvhAdVp.WnteizZClxjUHAFFxx0yHZoWdFA==", "state"=>"a93283bffc4448746b77a4dc9adc35fcd33860b824d0db42", "provider"=>"salesforce"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-14 15:46:28 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.6ms)
+Rendered layouts/_stylesheets.html.erb (6.4ms)
+  [1m[36mUser Load (24.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (44.3ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 69ms (Views: 44.4ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-14 15:46:28 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-14 15:46:28 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-14 15:46:28 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-14 15:46:28 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-14 15:46:28 +0530
+Served asset /print.css - 304 Not Modified (0ms)
