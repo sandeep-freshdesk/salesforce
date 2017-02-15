@@ -18,7 +18,7 @@ AutopilotApp::Application.routes.draw do
   match '/signup', :to => 'users#new'  # for signup page
 
 
-  match '/login', :to => "sessions#new"
+  match '/signin', :to => "sessions#new"
   match '/signout', :to => "sessions#destroy"
 
   match '/users/:id', :to => 'users#show' # for show specific user
