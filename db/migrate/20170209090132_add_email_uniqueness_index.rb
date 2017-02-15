@@ -1,5 +1,5 @@
 class AddEmailUniquenessIndex < ActiveRecord::Migration
-   def self.up
+  def self.up
   	add_index :users, :email, :unique => true
   end
 
