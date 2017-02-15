@@ -49518,3 +49518,509 @@ Served asset /custom.css - 304 Not Modified (0ms)
 
 Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 16:22:34 +0530
 Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-15 18:29:06 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.1ms)
+Rendered layouts/_stylesheets.html.erb (5.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (27.9ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 102ms (Views: 101.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:29:07 +0530
+Served asset /screen.css - 200 OK (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:29:07 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:29:07 +0530
+Served asset /custom.css - 200 OK (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:29:07 +0530
+Served asset /logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:29:07 +0530
+Served asset /print.css - 200 OK (0ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-15 18:29:11 +0530
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "authorizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "authuid" varchar(255), "authuser_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "authusers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "admin" boolean DEFAULT 'f') 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170214104145')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209065204')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209090132')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209102116')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209112652')[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170210091921')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170214103757')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4t44SftZuwhZChy0Y.ogO0vtkFWl1z6.EhCDpOIZSd7mEl7ASRw%3D%3D&state=fe80df9bfbba608110d9cc4b4a9344e3e638d789ada5f7b2" for 127.0.0.1 at 2017-02-15 18:35:46 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"display"=>"page", "code"=>"aPrxFYRxG6g7t8p5hObeukV4t44SftZuwhZChy0Y.ogO0vtkFWl1z6.EhCDpOIZSd7mEl7ASRw==", "state"=>"fe80df9bfbba608110d9cc4b4a9344e3e638d789ada5f7b2", "provider"=>"salesforce"}
+  [1m[36mAuthorization Load (0.4ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'salesforce' AND "authorizations"."authuid" = 'https://login.salesforce.com/id/00D6F000001ezcZUAQ/0056F000006Qd89QAC' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "authusers" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", 2017-02-15 13:05:48 UTC], ["email", "sandeep@freshdesk.com"], ["name", "sandeep bairwa"], ["updated_at", 2017-02-15 13:05:48 UTC]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "authorizations" ("authuid", "authuser_id", "created_at", "provider", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["authuid", "https://login.salesforce.com/id/00D6F000001ezcZUAQ/0056F000006Qd89QAC"], ["authuser_id", 1], ["created_at", 2017-02-15 13:05:48 UTC], ["provider", "salesforce"], ["updated_at", 2017-02-15 13:05:48 UTC]]
+Redirected to http://localhost:3000/
+  [1m[35mAuthuser Load (0.3ms)[0m  SELECT "authusers".* FROM "authusers" WHERE "authusers"."id" = ? LIMIT 1  [["id", 1]]
+Completed 302 Found in 66ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-15 18:35:48 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.6ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+  [1m[36mAuthuser Load (0.2ms)[0m  [1mSELECT "authusers".* FROM "authusers" WHERE "authusers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authusers".* FROM "authusers" WHERE "authusers"."id" = ? LIMIT 1
+Rendered layouts/_header.html.erb (17.5ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:35:48 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:35:48 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:35:48 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:35:48 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:35:48 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2017-02-15 18:36:36 +0530
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-15 18:36:36 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.6ms)
+Rendered layouts/_stylesheets.html.erb (5.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (10.9ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:36 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:36 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:36:36 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:36:36 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:36 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2017-02-15 18:36:38 +0530
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Rendered layouts/_stylesheets.html.erb (4.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (9.4ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:38 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:38 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:36:38 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:36:38 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:38 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-02-15 18:36:44 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0GbKWoV60e/BfGFmdRv3wc+JEr2jDTJ/q/TES03SqHg=", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (43.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'example@railstutorial.org' LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Rendered layouts/_stylesheets.html.erb (5.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 84ms (Views: 31.9ms | ActiveRecord: 44.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:44 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:44 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:36:44 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:36:44 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:44 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2017-02-15 18:36:47 +0530
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (0.1ms)
+Rendered users/new.html.erb within layouts/application (24.2ms)
+Rendered layouts/_stylesheets.html.erb (10.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (2.2ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 78ms (Views: 77.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:47 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:47 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:36:47 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:36:47 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:36:47 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-02-15 18:37:09 +0530
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0GbKWoV60e/BfGFmdRv3wc+JEr2jDTJ/q/TES03SqHg=", "user"=>{"name"=>"first", "email"=>"first@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('first@example.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-15 13:07:09 UTC], ["email", "first@example.com"], ["encrypted_password", "97d97127c0d5b7b72673d8e27299f5ab42a42627a34c113e47ee32a943b48b2b"], ["name", "first"], ["salt", "7a52133e58c4982c4e924d21a0046dba5e97bc9993ef0a36d11e0acf8ed5e342"], ["updated_at", 2017-02-15 13:07:09 UTC]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 67ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-02-15 18:37:09 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered users/show.html.erb within layouts/application (2.0ms)
+Rendered layouts/_stylesheets.html.erb (4.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (5.4ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 37ms (Views: 29.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:09 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:37:09 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:09 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:37:09 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:09 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-02-15 18:37:20 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered users/show.html.erb within layouts/application (1.3ms)
+Rendered layouts/_stylesheets.html.erb (3.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (4.1ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 24ms (Views: 16.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:20 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:20 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:37:20 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:37:20 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:20 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-02-15 18:37:21 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+Rendered users/_user.html.erb (2.1ms)
+Rendered users/index.html.erb within layouts/application (3.3ms)
+Rendered layouts/_stylesheets.html.erb (5.2ms)
+Rendered layouts/_header.html.erb (3.8ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 73ms (Views: 65.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:21 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:37:21 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:21 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:37:21 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:21 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2017-02-15 18:37:23 +0530
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1
+Rendered shared/_error_messages.html.erb (0.1ms)
+Rendered users/edit.html.erb within layouts/application (4.4ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (3.9ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 30ms (Views: 21.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:23 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:23 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:37:23 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:37:23 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:23 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2017-02-15 18:37:25 +0530
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-15 18:37:25 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.5ms)
+Rendered layouts/_stylesheets.html.erb (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (8.6ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:25 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:25 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:37:25 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:37:25 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:25 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-15 18:37:31 +0530
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-15 18:37:31 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4tyw0EiyGD4K1kpz6z5MTuRzK2t23STTMB4DuVSv91tHR1c81lA%3D%3D&state=963c001b3caf8e8dfeef454bae5610f9bf13161cb2113f33" for 127.0.0.1 at 2017-02-15 18:37:32 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"display"=>"page", "code"=>"aPrxFYRxG6g7t8p5hObeukV4tyw0EiyGD4K1kpz6z5MTuRzK2t23STTMB4DuVSv91tHR1c81lA==", "state"=>"963c001b3caf8e8dfeef454bae5610f9bf13161cb2113f33", "provider"=>"salesforce"}
+  [1m[35mAuthorization Load (0.1ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'salesforce' AND "authorizations"."authuid" = 'https://login.salesforce.com/id/00D6F000001ezcZUAQ/0056F000006Qd89QAC' LIMIT 1
+  [1m[36mAuthuser Load (0.1ms)[0m  [1mSELECT "authusers".* FROM "authusers" WHERE "authusers"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+  [1m[35mAuthuser Load (0.2ms)[0m  SELECT "authusers".* FROM "authusers" WHERE "authusers"."id" = ? LIMIT 1  [["id", 1]]
+Completed 302 Found in 88ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-15 18:37:34 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.5ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+  [1m[36mAuthuser Load (0.1ms)[0m  [1mSELECT "authusers".* FROM "authusers" WHERE "authusers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "authusers".* FROM "authusers" WHERE "authusers"."id" = ? LIMIT 1
+Rendered layouts/_header.html.erb (13.6ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:34 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:34 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-15 18:37:34 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-15 18:37:34 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-15 18:37:34 +0530
+Served asset /print.css - 304 Not Modified (0ms)

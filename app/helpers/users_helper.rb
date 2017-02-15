@@ -7,10 +7,6 @@ module UsersHelper
 	end
 
 	 def current_user_class(user)
-		puts "usser = #{user}"
-		puts "class = #{user.class}"
 		user.class == User #compare class of user with User model
-	
-
 	end
 end

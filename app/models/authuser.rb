@@ -8,7 +8,6 @@ class Authuser < ActiveRecord::Base
 	  unless authorizations.find_by_provider_and_authuid(auth_hash["provider"], auth_hash["uid"])
 	    Authorization.create :authuser => self, :provider => auth_hash["provider"], :authuid => auth_hash["uid"]
 	  end
-	  puts "self in add_provider ======#{self}"
 	  self
 	end
 end

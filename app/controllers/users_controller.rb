@@ -3,36 +3,28 @@ class UsersController < ApplicationController
 	before_filter :correct_user, :only => [:edit, :update]
 	before_filter :admin_user, :only => :destroy
 	def new
-		@title = "sign up"
 		@user = User.new
 	end
 
 	def show
-
-		puts "user ctrl sdfdf= #{cookies.signed[:remember_token]}"
-
 		if cookies.signed[:remember_token] &&  cookies.signed[:remember_token][0] &&  ((cookies.signed[:remember_token][0]).is_a? Integer)
-			puts "in if "	
 			@user = User.find(params[:id])
 			@title = @user.name
 		elsif cookies.signed[:remember_token] &&  cookies.signed[:remember_token][1] && ((cookies.signed[:remember_token][1]).is_a? Integer)
-			puts "eeelsiiiifffff"
 			@user = Authuser.find(params[:id])
 		end
-			
-		 
 		
 	end
 
 	def create
 		@user = User.new(params[:user])
 		if @user.save
-		sign_in @user
-		flash[:success] = "Welcome to the Sample App!"
-		redirect_to @user
+			sign_in @user
+			flash[:success] = "Welcome to the Sample App!"
+			redirect_to @user
 		else
-		@title = "Sign up"
-		render 'new'
+			@title = "Sign up"
+			render 'new'
 		end
 	end
 
@@ -44,11 +36,11 @@ class UsersController < ApplicationController
 	def update
 		@user = User.find(params[:id])
 		if @user.update_attributes(params[:user])
-		flash[:success] = "Profile updated."
-		redirect_to @user
+			flash[:success] = "Profile updated."
+			redirect_to @user
 		else
-		@title = "Edit user"
-		render 'edit'
+			@title = "Edit user"
+			render 'edit'
 		end
 	end
 
