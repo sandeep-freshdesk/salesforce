@@ -8,8 +8,20 @@ class UsersController < ApplicationController
 	end
 
 	def show
-		@user = User.find(params[:id])
-		@title = @user.name
+
+		puts "user ctrl sdfdf= #{cookies.signed[:remember_token]}"
+
+		if cookies.signed[:remember_token] &&  cookies.signed[:remember_token][0] &&  ((cookies.signed[:remember_token][0]).is_a? Integer)
+			puts "in if "	
+			@user = User.find(params[:id])
+			@title = @user.name
+		elsif cookies.signed[:remember_token] &&  cookies.signed[:remember_token][1] && ((cookies.signed[:remember_token][1]).is_a? Integer)
+			puts "eeelsiiiifffff"
+			@user = Authuser.find(params[:id])
+		end
+			
+		 
+		
 	end
 
 	def create
@@ -47,10 +59,10 @@ class UsersController < ApplicationController
 	end
 
 	def destroy
-User.find(params[:id]).destroy
-flash[:success] = "User destroyed."
-redirect_to users_path
-end
+		User.find(params[:id]).destroy
+		flash[:success] = "User destroyed."
+		redirect_to users_path
+	end
 
 	private 
 		def user_params
@@ -58,7 +70,7 @@ end
 		end
 
 		def authenticate
-		deny_access unless signed_in?
+			deny_access unless signed_in?
 		end
 
 		def correct_user

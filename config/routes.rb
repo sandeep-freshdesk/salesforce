@@ -16,7 +16,7 @@ AutopilotApp::Application.routes.draw do
   match '/help', :to => 'pages#help'
 
   match '/signup', :to => 'users#new'  # for signup page
- # match '/signin', :to => "sessions#new"
+  match '/signin', :to => "sessions#new"
 
   match '/login', :to => "sessions#new"
 
@@ -30,6 +30,8 @@ AutopilotApp::Application.routes.draw do
 
   #match 'index', :to => 'users#index' # all users available at   /users
  
+
+
 
 
 
