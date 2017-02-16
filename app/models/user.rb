@@ -48,6 +48,15 @@ class User < ActiveRecord::Base
 		(user && user.salt == cookie_salt) ? user : nil
 	end
 
+	def self.updatePrivilege(id, status)
+		user = find_by_id(id)
+		if (status == 'true' && user.privilege == false) || (status == 'false' && user.privilege == true) 
+			user.update_column(:privilege, status)
+		else
+			puts "sfkslfnot else #{status}   ==  #{!user.privilege}"
+		end
+	end
+
 	private
 
 		def encrypt_password

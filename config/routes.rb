@@ -28,6 +28,10 @@ AutopilotApp::Application.routes.draw do
   match '/login', :to => "sessions#login"
   match '/auth/:provider/callback', :to => 'sessions#create'
 
+  match '/privilege/:id/:status', :to => 'users#providePrivilege'
+
+
+
   #match 'index', :to => 'users#index' # all users available at   /users
  
 

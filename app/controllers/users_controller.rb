@@ -9,7 +9,12 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
-		@title = @user.name
+		if current_user == @user || current_user.privilege
+			@title = @user.name
+		else
+			flash[:error] = "Not Privileged User!"
+			redirect_to(root_path)
+		end 	
 	end
 
 	def create
@@ -41,14 +46,34 @@ class UsersController < ApplicationController
 	end
 
 	def index
-		@users = User.paginate(:page => params[:page])
-		@title = "All Users"
+		puts "current_user ===#{current_user.privilege}"
+		if current_user.privilege
+			@users = User.paginate(:page => params[:page])
+			@title = "All Users"
+		else
+			flash[:error] = "Not Privileged User!"
+			redirect_to(root_path)
+		end 
+		
 	end
 
 	def destroy
 		User.find(params[:id]).destroy
 		flash[:success] = "User destroyed."
 		redirect_to users_path
+	end
+
+
+	def providePrivilege
+		if current_user.admin
+			puts "camess   ====== #{params[:id]}....#{params[:status]}"
+			User.updatePrivilege(params[:id],params[:status])
+			redirect_to users_path
+		else
+
+			flash[:error] = "dont have rights!"
+			redirect_to(root_path)
+		end
 	end
 
 	private 

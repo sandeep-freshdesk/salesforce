@@ -46022,3 +46022,107 @@ Served asset /print.css - 304 Not Modified (0ms)
 
 Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-16 15:07:18 +0530
 Served asset /logo.png - 304 Not Modified (0ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "authorizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "admin" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170216085523')
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209065204')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209090132')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209102116')[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209112652')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170210091921')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", false], ["created_at", 2017-02-16 10:35:32 UTC], ["email", "example@railstutorial.org"], ["encrypted_password", "491879b78f1a27d4231e6ccc60aac3b053c9c2eb072ed4fc3a99018e28d9fbf8"], ["name", "Example User"], ["salt", "19ba368d628b51919e2e97f6f58422fa9e2c60dd8a3aa51f7bb1f8ac9e7b84fe"], ["updated_at", 2017-02-16 10:35:32 UTC]]
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "admin" = 't', "updated_at" = '2017-02-16 10:35:32.422038' WHERE "users"."id" = 1[0m
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "authorizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "admin" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170216085523')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209065204')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209090132')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209102116')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209112652')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170210091921')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20170209065204)
+Migrating to AddEmailUniquenessIndex (20170209090132)
+Migrating to AddPasswordToUsers (20170209102116)
+Migrating to AddSaltToUsers (20170209112652)
+Migrating to AddAdminToUsers (20170210091921)
+Migrating to CreateAuthorizations (20170216085523)
+Migrating to AddPrivilegeToUsers (20170216104121)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (38.7ms)[0m  [1mALTER TABLE "users" ADD "privilege" boolean DEFAULT 'f'[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20170216104121')
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("authorizations")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (5.8ms)[0m  CREATE TABLE "authorizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "admin" boolean DEFAULT 'f', "privilege" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170216104121')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209065204')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209090132')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209102116')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209112652')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170210091921')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170216085523')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "privilege", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-16 10:45:04 UTC], ["email", "example@railstutorial.org"], ["encrypted_password", "f4246c1571d121a541d879b489e931355d9d1a4043f1c3941a72607037c8053d"], ["name", "Example User"], ["privilege", false], ["salt", "65cbe208ab5f3ebf7a84bb00618bb0479e7c066eae9ef3bfe2c7579702c3b4a4"], ["updated_at", 2017-02-16 10:45:04 UTC]]
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "admin" = 't', "updated_at" = '2017-02-16 10:45:04.629074' WHERE "users"."id" = 1
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  CREATE TABLE "authorizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "admin" boolean DEFAULT 'f', "privilege" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170216104121')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209065204')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209090132')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170209102116')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170209112652')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170210091921')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170216085523')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "encrypted_password", "name", "privilege", "salt", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["admin", false], ["created_at", 2017-02-16 10:46:25 UTC], ["email", "example@railstutorial.org"], ["encrypted_password", "9a5932314959d4d979f3945c5418e007e9bb8ebbc0321a3f5e76d02819bc2657"], ["name", "Example User"], ["privilege", false], ["salt", "daad543db0fcec509b9f8c2dd20ce9014492a5cbf232c456ecc08e781b5887d2"], ["updated_at", 2017-02-16 10:46:25 UTC]]
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "admin" = 't', "updated_at" = '2017-02-16 10:46:25.686165' WHERE "users"."id" = 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "privilege" = 't', "updated_at" = '2017-02-16 10:46:25.689215' WHERE "users"."id" = 1[0m
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)

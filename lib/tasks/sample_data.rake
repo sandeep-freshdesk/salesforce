@@ -9,6 +9,9 @@ namespace :db do
 				:password => "foobar",
 				:password_confirmation => "foobar")
 		admin.toggle!(:admin)
+		admin.toggle!(:privilege)
+=begin
+	
 
 		99.times do |n|
 			name = Faker::Name.name
@@ -20,5 +23,6 @@ namespace :db do
 			:password => password,
 			:password_confirmation => password)
 		end
+=end
 	end
 end
