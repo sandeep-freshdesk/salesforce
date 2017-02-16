@@ -11,4 +11,9 @@
 			<strong>URL</strong> <%= link_to user_path(@user.id), @user %>
 		</td>
 	</tr>
+	<% @user.authorizations.each do |authorization| %>
+		<tr>
+			<td><%= authorization.provider %></td>
+		</tr>
+	<% end %>
 </table>
