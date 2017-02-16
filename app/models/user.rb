@@ -10,6 +10,7 @@
 #
 
 class User < ActiveRecord::Base
+	has_many :authorizations
 	attr_accessor :password
 
 	attr_accessible :name, :email, :password, :password_confirmation
