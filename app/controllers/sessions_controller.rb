@@ -3,11 +3,12 @@ class SessionsController < ApplicationController
   end
 
   def login
-  	redirect_to '/auth/salesforce'
+  	cookies.delete(:remember_token)
+	current_user = nil
+	redirect_to "/auth/#{params[:providerName]}"
   end
 
-  def create
-	auth_hash = request.env['omniauth.auth']
+  def create]	auth_hash = request.env['omniauth.auth']
 	puts "auth_hash #{auth_hash.to_json}"
 	if auth_hash
 		puts "auth_hash #{auth_hash['info']}"
@@ -24,14 +25,14 @@ class SessionsController < ApplicationController
 			user = User.find_by_email(auth_hash['info']['email'])
 			puts "user find =======#{user}"
 			if user
-				Authorization.createProvider(auth_hash['provider'], auth_hash['uid'], user)
+				Authorization.createProvider(auth_hash, user)
 				sign_in user	
 				flash[:success] = "User is saved in sample App"
 				redirect_back_or user
 			else
 				user = User.new({:name => auth_hash['info']['name'], :email => auth_hash['info']['email']})
 				if user.save
-					Authorization.createProvider(auth_hash['provider'], auth_hash['uid'], user)
+					Authorization.createProvider(auth_hash, user)
 					sign_in user	
 					flash[:success] = "User is saved in sample App"
 					redirect_back_or user

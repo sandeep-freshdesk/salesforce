@@ -33,6 +33,8 @@ gem 'will_paginate', '3.0.pre2'
 
 gem 'omniauth'
 gem 'omniauth-salesforce'
+gem 'omniauth-facebook'
+gem "koala", "~> 1.10.0rc" # Facebook API
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

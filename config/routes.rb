@@ -1,4 +1,4 @@
-AutopilotApp::Application.routes.draw do
+  AutopilotApp::Application.routes.draw do
   get "sessions/new"
 
 
@@ -25,8 +25,8 @@ AutopilotApp::Application.routes.draw do
 
 
 
-  match '/login', :to => "sessions#login"
-  match '/auth/:provider/callback', :to => 'sessions#create'
+  match '/login/:providerName', :to => "sessions#login", :as => :login
+  match '/auth/:provider/callback', :to => 'sessions#create', via: [:get, :post]
 
   match '/privilege/:id/:status', :to => 'users#providePrivilege'
 

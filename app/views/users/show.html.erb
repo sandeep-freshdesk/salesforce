@@ -13,7 +13,17 @@
 	</tr>
 	<% @user.authorizations.each do |authorization| %>
 		<tr>
-			<td><%= authorization.provider %></td>
+			<td>
+				<%= authorization.provider %>
+			</td>
+
 		</tr>
+		<% if authorization.provider == 'facebook' %>
+			<tr>
+				<td>
+					<%= link_to "click here to view fb Profile Image", facebookUserInfo(authorization['token']) %>
+				</td>
+			</tr>
+		<% end %>
 	<% end %>
 </table>
