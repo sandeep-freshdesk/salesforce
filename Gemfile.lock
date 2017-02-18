@@ -44,6 +44,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
+    databasedotcom (1.3.5)
+      activesupport
+      json
+      multipart-post (~> 2.0.0)
+    databasedotcom-rails (1.1.0)
+      databasedotcom
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (1.3.3)
@@ -149,6 +155,8 @@ PLATFORMS
 DEPENDENCIES
   annotate
   coffee-rails (~> 3.1.1)
+  databasedotcom
+  databasedotcom-rails
   factory_girl_rails (= 1.0)
   faker (= 0.3.1)
   gravatar_image_tag (= 0.1.0)

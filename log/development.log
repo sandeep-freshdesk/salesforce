@@ -50902,3 +50902,1105 @@ ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
   
 
 Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 15:24:54 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (20.5ms)
+Rendered layouts/_stylesheets.html.erb (34.4ms)
+  [1m[36mUser Load (17.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (65.5ms)
+Rendered layouts/_footer.html.erb (6.8ms)
+Completed 200 OK in 253ms (Views: 235.5ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 15:24:54 +0530
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 15:24:54 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 15:24:54 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 15:24:54 +0530
+Served asset /logo.png - 304 Not Modified (15ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 15:24:54 +0530
+Served asset /print.css - 304 Not Modified (1ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 15:25:59 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 1385ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.5ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 15:38:02 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 1346ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+  [1m[36m (48.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20170209065204)
+Migrating to AddEmailUniquenessIndex (20170209090132)
+Migrating to AddPasswordToUsers (20170209102116)
+Migrating to AddSaltToUsers (20170209112652)
+Migrating to AddAdminToUsers (20170210091921)
+Migrating to CreateAuthorizations (20170216085523)
+Migrating to AddPrivilegeToUsers (20170216104121)
+Migrating to AddTokenToAuthorizations (20170217095920)
+  [1m[35m (16.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("authorizations")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_email')
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 15:43:06 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 1375ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 15:45:04 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.3ms)
+Rendered layouts/_stylesheets.html.erb (33.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (47.5ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 166ms (Views: 164.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 15:45:05 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 15:45:05 +0530
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 15:45:05 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 15:45:05 +0530
+Served asset /logo.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 15:45:05 +0530
+Served asset /print.css - 304 Not Modified (1ms)
+
+
+Started GET "/login/salesforce" for 127.0.0.1 at 2017-02-18 15:45:07 +0530
+
+SyntaxError (/Users/Sandeep/salesforce omni/salesforce/app/controllers/sessions_controller.rb:11: syntax error, unexpected ']', expecting ';' or '\n'
+  def create]	auth_hash = request.env['omniauth.auth']
+             ^
+/Users/Sandeep/salesforce omni/salesforce/app/controllers/sessions_controller.rb:87: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.7ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started GET "/login/salesforce" for 127.0.0.1 at 2017-02-18 15:45:44 +0530
+  Processing by SessionsController#login as HTML
+  Parameters: {"providerName"=>"salesforce"}
+Redirected to http://localhost:3000/auth/salesforce
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-18 15:45:44 +0530
+
+
+Started GET "/login/salesforce" for 127.0.0.1 at 2017-02-18 15:46:45 +0530
+  Processing by SessionsController#login as HTML
+  Parameters: {"providerName"=>"salesforce"}
+Redirected to http://localhost:3000/auth/salesforce
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-18 15:46:45 +0530
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 15:47:19 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (10.6ms)
+Rendered layouts/_stylesheets.html.erb (18.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (15.9ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 15:47:19 +0530
+Served asset /screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 15:47:19 +0530
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 15:47:19 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 15:47:19 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 15:47:19 +0530
+Served asset /print.css - 304 Not Modified (1ms)
+
+
+Started GET "/login/salesforce" for 127.0.0.1 at 2017-02-18 15:47:28 +0530
+  Processing by SessionsController#login as HTML
+  Parameters: {"providerName"=>"salesforce"}
+Redirected to http://localhost:3000/auth/salesforce
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-18 15:47:28 +0530
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 15:48:29 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (20.2ms)
+Rendered layouts/_stylesheets.html.erb (36.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (48.1ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 231ms (Views: 229.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 15:48:29 +0530
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 15:48:29 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 15:48:29 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 15:48:29 +0530
+Served asset /logo.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 15:48:29 +0530
+Served asset /print.css - 304 Not Modified (1ms)
+
+
+Started GET "/login/salesforce" for 127.0.0.1 at 2017-02-18 15:50:58 +0530
+  Processing by SessionsController#login as HTML
+  Parameters: {"providerName"=>"salesforce"}
+Redirected to http://localhost:3000/auth/salesforce
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-18 15:50:59 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4t8KFtqUsjpbkWKumQ78KRajHGX.qB1wKbK_dvZGOFJrTQY_Z7g%3D%3D&state=db6de6134f5484be5dbc7fee194d3447911da5eb282a41fd" for 127.0.0.1 at 2017-02-18 15:51:04 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"display"=>"page", "code"=>"aPrxFYRxG6g7t8p5hObeukV4t8KFtqUsjpbkWKumQ78KRajHGX.qB1wKbK_dvZGOFJrTQY_Z7g==", "state"=>"db6de6134f5484be5dbc7fee194d3447911da5eb282a41fd", "provider"=>"salesforce"}
+  [1m[35mAuthorization Load (7.6ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'salesforce' AND "authorizations"."uid" = 'https://login.salesforce.com/id/00D6F000001ezcZUAQ/0056F000006Qd89QAC' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 157ms
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-02-18 15:51:07 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAuthorization Load (0.1ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."user_id" = 2
+Rendered users/show.html.erb within layouts/application (32.4ms)
+Rendered layouts/_stylesheets.html.erb (4.2ms)
+Rendered layouts/_header.html.erb (3.2ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 103ms (Views: 95.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 15:51:07 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 15:51:07 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 15:51:07 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 15:51:07 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 15:51:07 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 15:51:51 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 836ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 15:56:28 +0530
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 15:57:05 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (20.1ms)
+Rendered layouts/_stylesheets.html.erb (36.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Rendered layouts/_header.html.erb (57.5ms)
+Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 219ms (Views: 217.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 15:57:05 +0530
+Served asset /custom.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 15:57:05 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 15:57:05 +0530
+Served asset /screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 15:57:05 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 15:57:05 +0530
+Served asset /print.css - 304 Not Modified (2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-02-18 15:57:09 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAuthorization Load (0.1ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."user_id" = 2
+Rendered users/show.html.erb within layouts/application (74.4ms)
+Rendered layouts/_stylesheets.html.erb (4.9ms)
+Rendered layouts/_header.html.erb (2.6ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 106ms (Views: 92.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 15:57:09 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 15:57:09 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 15:57:09 +0530
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 15:57:09 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 15:57:09 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 15:57:10 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.5ms)
+Rendered layouts/_stylesheets.html.erb (3.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Rendered layouts/_header.html.erb (24.1ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 15:57:10 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 15:57:10 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 15:57:10 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 15:57:10 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 15:57:10 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 15:57:14 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 1284ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:01:04 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 912ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:02:57 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 870ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:03:23 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 1251ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 16:03:29 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (1.2ms)
+Rendered layouts/_stylesheets.html.erb (20.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Rendered layouts/_header.html.erb (56.4ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 209ms (Views: 207.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:29 +0530
+Served asset /screen.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:03:29 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:30 +0530
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:03:30 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:30 +0530
+Served asset /print.css - 304 Not Modified (2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-02-18 16:03:31 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAuthorization Load (0.1ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."user_id" = 2
+Rendered users/show.html.erb within layouts/application (84.8ms)
+Rendered layouts/_stylesheets.html.erb (4.5ms)
+Rendered layouts/_header.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 113ms (Views: 103.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:31 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:31 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:03:31 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:03:31 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:31 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2017-02-18 16:03:34 +0530
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 16:03:34 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.5ms)
+Rendered layouts/_stylesheets.html.erb (6.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (10.9ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:34 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:03:34 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:35 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:03:35 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:35 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/login/salesforce" for 127.0.0.1 at 2017-02-18 16:03:37 +0530
+  Processing by SessionsController#login as HTML
+  Parameters: {"providerName"=>"salesforce"}
+Redirected to http://localhost:3000/auth/salesforce
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-18 16:03:37 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4t3XSo6Wh7KeanhbeNIRcy9FBvMBlebxSwj.jTC0xYKR58auT6g%3D%3D&state=9c43efbb355eb4d7873edee51e78c9d30f80252ae886582e" for 127.0.0.1 at 2017-02-18 16:03:38 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"display"=>"page", "code"=>"aPrxFYRxG6g7t8p5hObeukV4t3XSo6Wh7KeanhbeNIRcy9FBvMBlebxSwj.jTC0xYKR58auT6g==", "state"=>"9c43efbb355eb4d7873edee51e78c9d30f80252ae886582e", "provider"=>"salesforce"}
+  [1m[35mAuthorization Load (0.2ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'salesforce' AND "authorizations"."uid" = 'https://login.salesforce.com/id/00D6F000001ezcZUAQ/0056F000006Qd89QAC' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 129ms
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-02-18 16:03:40 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAuthorization Load (0.1ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."user_id" = 2
+Rendered users/show.html.erb within layouts/application (8.5ms)
+Rendered layouts/_stylesheets.html.erb (5.3ms)
+Rendered layouts/_header.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 38ms (Views: 25.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:03:41 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:41 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:41 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:03:41 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:41 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2017-02-18 16:03:47 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQAULtdYecE4fyBwSsN4WiQCOHYbfjXds8rylTCGc371iXuOdqWHrIewMEaVc967wjAUYly5dvaJ9nKL_l8XEa7wZ3WCRe6Ml_T9zAx_CA_GXNuqwuBhQuGJ6RI8mnxVIrUpPPFxHdpzVoZl4HreXD80ti_OeGvSIJ6DD15AsqtnqxN1DABSCUd6iiI7UI4Un6Xc7I-iffku_KoACa7zvlIUofVuMUqMjMqJThyU0tquY7h6Zfz-wFt8xpKGv4Y9nt3Lde97bfsdDvWng-V4YAFi77YpAjVM0BWiDKtYQ05NBJTBaYoxgVDrE4PjOJDEqK_jmsiy-HBBxQTx-JRs2drL&state=455e9a43193e2f98840e6909af75f0d0d0c06f00007a49e1" for 127.0.0.1 at 2017-02-18 16:03:48 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAULtdYecE4fyBwSsN4WiQCOHYbfjXds8rylTCGc371iXuOdqWHrIewMEaVc967wjAUYly5dvaJ9nKL_l8XEa7wZ3WCRe6Ml_T9zAx_CA_GXNuqwuBhQuGJ6RI8mnxVIrUpPPFxHdpzVoZl4HreXD80ti_OeGvSIJ6DD15AsqtnqxN1DABSCUd6iiI7UI4Un6Xc7I-iffku_KoACa7zvlIUofVuMUqMjMqJThyU0tquY7h6Zfz-wFt8xpKGv4Y9nt3Lde97bfsdDvWng-V4YAFi77YpAjVM0BWiDKtYQ05NBJTBaYoxgVDrE4PjOJDEqK_jmsiy-HBBxQTx-JRs2drL", "state"=>"455e9a43193e2f98840e6909af75f0d0d0c06f00007a49e1", "provider"=>"facebook"}
+  [1m[36mAuthorization Load (0.2ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '122861584900988' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Redirected to http://localhost:3000/users/8
+Completed 302 Found in 26ms
+
+
+Started GET "/users/8" for 127.0.0.1 at 2017-02-18 16:03:49 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+  [1m[36mAuthorization Load (0.2ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."user_id" = 8[0m
+Rendered users/show.html.erb within layouts/application (738.4ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 771ms (Views: 753.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:03:50 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 885ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.7ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:51 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:51 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:03:51 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:03:51 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:03:51 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:06:17 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 1323ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 16:06:53 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.6ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered layouts/_header.html.erb (37.2ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 130ms (Views: 129.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:06:53 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:06:53 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:06:53 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:06:54 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:06:54 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2017-02-18 16:07:01 +0530
+
+
+Started GET "/auth/facebook/callback?code=AQBg2HPld-03t5kgcPjWvGPdMJZtFtncwErCCaW_-IFAcYBJOaKnhltf3s7rDSxFkCGy26wMUCXxzKCmQGjUBFowENJqgFLVgUz031UdEnGCEwMvcJCjKfrhm3yI1jW59VuCqFm54KNtSmQ68BmqFVjCNL_9zsj7y2OzPPKj6pOw0Q4L6BsTlfi0CBh609ltkC-JxPtJ4XnYo-9ncWvHaWIYTldUreD4NghKIZItAY6WsLCQGGQ3oHSS1OcLJZel7B3rNCBoULYCYjGIHFlLfuj6lvqnuxqFJVUyIta70MCfWRW03UlwOF1OSXJOzjkU9sIFpsSjmvzD9IsfP-e7BRJW&state=465409ecfa16993cb9789c04d3b54b509ad531dd953a9c4f" for 127.0.0.1 at 2017-02-18 16:07:01 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBg2HPld-03t5kgcPjWvGPdMJZtFtncwErCCaW_-IFAcYBJOaKnhltf3s7rDSxFkCGy26wMUCXxzKCmQGjUBFowENJqgFLVgUz031UdEnGCEwMvcJCjKfrhm3yI1jW59VuCqFm54KNtSmQ68BmqFVjCNL_9zsj7y2OzPPKj6pOw0Q4L6BsTlfi0CBh609ltkC-JxPtJ4XnYo-9ncWvHaWIYTldUreD4NghKIZItAY6WsLCQGGQ3oHSS1OcLJZel7B3rNCBoULYCYjGIHFlLfuj6lvqnuxqFJVUyIta70MCfWRW03UlwOF1OSXJOzjkU9sIFpsSjmvzD9IsfP-e7BRJW", "state"=>"465409ecfa16993cb9789c04d3b54b509ad531dd953a9c4f", "provider"=>"facebook"}
+  [1m[36mAuthorization Load (0.2ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'facebook' AND "authorizations"."uid" = '122861584900988' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Redirected to http://localhost:3000/users/8
+Completed 302 Found in 43ms
+
+
+Started GET "/users/8" for 127.0.0.1 at 2017-02-18 16:07:03 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+  [1m[36mAuthorization Load (0.1ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."user_id" = 8[0m
+Rendered users/show.html.erb within layouts/application (612.3ms)
+Rendered layouts/_stylesheets.html.erb (5.7ms)
+Rendered layouts/_header.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 652ms (Views: 634.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:07:03 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:07:03 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:07:04 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:07:04 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:07:04 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:07:04 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 896ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.2ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:07:05 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 848ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/signout" for 127.0.0.1 at 2017-02-18 16:12:42 +0530
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 16:12:42 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (19.9ms)
+Rendered layouts/_stylesheets.html.erb (30.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (48.3ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 186ms (Views: 184.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:12:42 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:12:42 +0530
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:12:42 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:12:42 +0530
+Served asset /logo.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:12:42 +0530
+Served asset /print.css - 304 Not Modified (1ms)
+
+
+Started GET "/login/salesforce" for 127.0.0.1 at 2017-02-18 16:12:44 +0530
+  Processing by SessionsController#login as HTML
+  Parameters: {"providerName"=>"salesforce"}
+Redirected to http://localhost:3000/auth/salesforce
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-18 16:12:44 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4t8hpYpvgBPRqttffUcXnihhGI0gUa07IkAOETxgfG2V1Q.XkDQ%3D%3D&state=c710365911fbd28b93a14051ea9be8236ba9e520547a23fe" for 127.0.0.1 at 2017-02-18 16:12:45 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"display"=>"page", "code"=>"aPrxFYRxG6g7t8p5hObeukV4t8hpYpvgBPRqttffUcXnihhGI0gUa07IkAOETxgfG2V1Q.XkDQ==", "state"=>"c710365911fbd28b93a14051ea9be8236ba9e520547a23fe", "provider"=>"salesforce"}
+  [1m[35mAuthorization Load (0.2ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'salesforce' AND "authorizations"."uid" = 'https://login.salesforce.com/id/00D6F000001ezcZUAQ/0056F000006Qd89QAC' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 146ms
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-02-18 16:12:47 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAuthorization Load (0.2ms)[0m  SELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."user_id" = 2
+Rendered users/show.html.erb within layouts/application (16.3ms)
+Rendered layouts/_stylesheets.html.erb (6.2ms)
+Rendered layouts/_header.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 40.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:12:47 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:12:47 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:12:47 +0530
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:12:47 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:12:47 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:12:55 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 866ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 16:28:03 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (19.9ms)
+Rendered layouts/_stylesheets.html.erb (37.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Rendered layouts/_header.html.erb (56.3ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 205ms (Views: 204.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:28:03 +0530
+Served asset /screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:28:03 +0530
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:28:04 +0530
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:28:04 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:28:04 +0530
+Served asset /print.css - 304 Not Modified (2ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2017-02-18 16:28:06 +0530
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-18 16:28:06 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.5ms)
+Rendered layouts/_stylesheets.html.erb (4.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (13.2ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:28:06 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:28:06 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:28:06 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:28:06 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:28:06 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/login/salesforce" for 127.0.0.1 at 2017-02-18 16:28:07 +0530
+  Processing by SessionsController#login as HTML
+  Parameters: {"providerName"=>"salesforce"}
+Redirected to http://localhost:3000/auth/salesforce
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/salesforce" for 127.0.0.1 at 2017-02-18 16:28:07 +0530
+
+
+Started GET "/auth/salesforce/callback?display=page&code=aPrxFYRxG6g7t8p5hObeukV4twilh6xHsx81BdbgCbAY1qQ33vN2Pjzm1APHod8jjmpfb9lbUQ%3D%3D&state=b7d5ebaeccef1a1a8dceec2ee02ef44d130266c4a1d2261d" for 127.0.0.1 at 2017-02-18 16:28:08 +0530
+  Processing by SessionsController#create as HTML
+  Parameters: {"display"=>"page", "code"=>"aPrxFYRxG6g7t8p5hObeukV4twilh6xHsx81BdbgCbAY1qQ33vN2Pjzm1APHod8jjmpfb9lbUQ==", "state"=>"b7d5ebaeccef1a1a8dceec2ee02ef44d130266c4a1d2261d", "provider"=>"salesforce"}
+  [1m[36mAuthorization Load (0.1ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."provider" = 'salesforce' AND "authorizations"."uid" = 'https://login.salesforce.com/id/00D6F000001ezcZUAQ/0056F000006Qd89QAC' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 99ms
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-02-18 16:28:10 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mAuthorization Load (0.2ms)[0m  [1mSELECT "authorizations".* FROM "authorizations" WHERE "authorizations"."user_id" = 2[0m
+Rendered users/show.html.erb within layouts/application (19.0ms)
+Rendered layouts/_stylesheets.html.erb (4.1ms)
+Rendered layouts/_header.html.erb (2.4ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 40.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-18 16:28:10 +0530
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-18 16:28:10 +0530
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-18 16:28:10 +0530
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-18 16:28:10 +0530
+Served asset /print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-18 16:28:10 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:28:20 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 977ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/allcontacts" for 127.0.0.1 at 2017-02-18 16:28:21 +0530
+  Processing by SalesforceController#index as HTML
+Completed 500 Internal Server Error in 1850ms
+
+Databasedotcom::SalesForceError (authentication failure):
+  app/controllers/salesforce_controller.rb:7:in `index'
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)

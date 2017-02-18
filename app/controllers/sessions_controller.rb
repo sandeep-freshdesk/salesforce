@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
 	redirect_to "/auth/#{params[:providerName]}"
   end
 
-  def create]	auth_hash = request.env['omniauth.auth']
+  def create	
+  	auth_hash = request.env['omniauth.auth']
 	puts "auth_hash #{auth_hash.to_json}"
 	if auth_hash
 		puts "auth_hash #{auth_hash['info']}"
