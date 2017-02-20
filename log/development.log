@@ -52004,3 +52004,40 @@ Databasedotcom::SalesForceError (authentication failure):
 Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
 Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
 Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Associations::AssociationCollection is deprecated! Use ActiveRecord::Associations::CollectionProxy instead. (called from <top (required)> at /Users/Sandeep/salesforce omni/salesforce/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-20 11:01:08 +0530
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (19.5ms)
+Rendered layouts/_stylesheets.html.erb (38.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Rendered layouts/_header.html.erb (45.4ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 224ms (Views: 222.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2017-02-20 11:01:08 +0530
+Served asset /screen.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-02-20 11:01:08 +0530
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2017-02-20 11:01:08 +0530
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /Users/Sandeep/.rvm/gems/ruby-2.1.9@gemset_name/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-20 11:01:09 +0530
+Served asset /logo.png - 304 Not Modified (15ms)
+
+
+Started GET "/assets/print.css?body=1" for 127.0.0.1 at 2017-02-20 11:01:09 +0530
+Served asset /print.css - 304 Not Modified (1ms)

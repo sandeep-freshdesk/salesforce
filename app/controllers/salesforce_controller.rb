@@ -4,8 +4,8 @@ class SalesforceController < ApplicationController
 
 	def index
 		puts "index =========="
-   	 	@contacts = User.all
-   	 puts "	 @contacts  = #{@contacts}"
+   	 	@contacts = Contact.all
+   		puts "	 @contacts  = #{@contacts}"
 	end
 
     def show
