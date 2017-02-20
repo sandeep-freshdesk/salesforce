@@ -14,7 +14,7 @@
 	<% @user.authorizations.each do |authorization| %>
 		<tr>
 			<td>
-				<%= authorization.provider %>
+				<%= link_to authorization.provider, "/#{authorization.provider}/allAccounts" %>
 			</td>
 
 		</tr>

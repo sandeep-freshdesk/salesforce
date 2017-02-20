@@ -36,8 +36,11 @@ gem 'omniauth-salesforce'
 gem 'omniauth-facebook'
 gem "koala", "~> 1.10.0rc" # Facebook API
 
-gem 'databasedotcom'    #salesforce api call
-gem 'databasedotcom-rails'  #salesforce api call
+gem "httparty"
+gem 'force'
+
+#gem 'databasedotcom'    #salesforce api call
+#gem 'databasedotcom-rails'  #salesforce api call
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

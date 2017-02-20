@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+	require "uri"
+	require "net/http"
+	include HTTParty
   def new
   end
 
@@ -8,11 +11,16 @@ class SessionsController < ApplicationController
 	redirect_to "/auth/#{params[:providerName]}"
   end
 
+
+
+
+
   def create	
   	auth_hash = request.env['omniauth.auth']
 	puts "auth_hash #{auth_hash.to_json}"
 	if auth_hash
-		puts "auth_hash #{auth_hash['info']}"
+		puts "refresh_token = #{auth_hash['credentials']['refresh_token']}"
+
 		flash[:success] = "through provider you are successfuly loggedin to the Sample App!"
 
 		@authorization = Authorization.find_by_provider_and_uid(auth_hash['provider'], auth_hash['uid'])

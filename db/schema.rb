@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20170217095920) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "token"
+    t.string   "refresh_token"
   end
 
   create_table "users", :force => true do |t|

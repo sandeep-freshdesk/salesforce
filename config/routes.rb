@@ -30,9 +30,7 @@
 
   match '/privilege/:id/:status', :to => 'users#providePrivilege'
 
-  match '/allcontacts', :to => 'salesforce#index'
-
-
+  match '/:provider/allAccounts', :to => 'salesforce#index'
 
   #match 'index', :to => 'users#index' # all users available at   /users
  
