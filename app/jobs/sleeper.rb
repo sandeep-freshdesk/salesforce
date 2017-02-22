@@ -7,5 +7,6 @@ class Sleeper
   	puts "going to sleep for #{seconds} seconds"
     sleep(seconds)
   	puts "sleep for #{seconds} seconds is done"
+  	return "this will be returned string"
   end
 end

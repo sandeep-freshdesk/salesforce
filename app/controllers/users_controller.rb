@@ -20,7 +20,8 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(params[:user])
 		if @user.save
-			Resque.enqueue(Sleeper, 15)			
+			catchString = Resque.enqueue(Sleeper, 15)
+			puts "catchString = =============#{catchString}"			
 			sign_in @user
 			flash[:success] = "sign up done!, Welcome to the Sample App!"
 			redirect_to @user
