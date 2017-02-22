@@ -1,0 +1,296 @@
+** [12:42:30 2017-02-22] 3872: Starting worker main
+** [12:42:30 2017-02-22] 3872: Registered signals
+** [12:42:30 2017-02-22] 3872: Running before_first_fork hooks
+** [12:42:30 2017-02-22] 3872: Checking sleep
+** [12:42:30 2017-02-22] 3872: Found job on sleep
+** [12:42:30 2017-02-22] 3872: resque-1.27.2: Processing sleep since 1487747550 [Sleeper]
+** [12:42:30 2017-02-22] 3872: got: (Job{sleep} | Sleeper | [15])
+** [12:42:30 2017-02-22] 3872: Running before_fork hooks with [(Job{sleep} | Sleeper | [15])]
+** [12:42:30 2017-02-22] 3872: resque-1.27.2: Forked 3874 at 1487747550
+** [12:42:45 2017-02-22] 3872: Checking sleep
+** [12:42:45 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:42:45 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:42:50 2017-02-22] 3872: Checking sleep
+** [12:42:50 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:42:50 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:42:55 2017-02-22] 3872: Checking sleep
+** [12:42:55 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:42:55 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:00 2017-02-22] 3872: Checking sleep
+** [12:43:00 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:00 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:05 2017-02-22] 3872: Checking sleep
+** [12:43:05 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:05 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:10 2017-02-22] 3872: Checking sleep
+** [12:43:10 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:10 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:15 2017-02-22] 3872: Checking sleep
+** [12:43:15 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:15 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:20 2017-02-22] 3872: Checking sleep
+** [12:43:20 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:20 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:25 2017-02-22] 3872: Checking sleep
+** [12:43:25 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:25 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:30 2017-02-22] 3872: Checking sleep
+** [12:43:30 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:30 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:35 2017-02-22] 3872: Checking sleep
+** [12:43:35 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:35 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:40 2017-02-22] 3872: Checking sleep
+** [12:43:40 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:40 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:45 2017-02-22] 3872: Checking sleep
+** [12:43:45 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:45 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:50 2017-02-22] 3872: Checking sleep
+** [12:43:50 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:50 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:43:55 2017-02-22] 3872: Checking sleep
+** [12:43:55 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:43:55 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:00 2017-02-22] 3872: Checking sleep
+** [12:44:00 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:00 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:05 2017-02-22] 3872: Checking sleep
+** [12:44:05 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:05 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:10 2017-02-22] 3872: Checking sleep
+** [12:44:10 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:10 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:15 2017-02-22] 3872: Checking sleep
+** [12:44:15 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:15 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:20 2017-02-22] 3872: Checking sleep
+** [12:44:20 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:20 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:25 2017-02-22] 3872: Checking sleep
+** [12:44:25 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:25 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:30 2017-02-22] 3872: Checking sleep
+** [12:44:30 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:30 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:35 2017-02-22] 3872: Checking sleep
+** [12:44:35 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:35 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:40 2017-02-22] 3872: Checking sleep
+** [12:44:40 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:40 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:45 2017-02-22] 3872: Checking sleep
+** [12:44:45 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:45 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:50 2017-02-22] 3872: Checking sleep
+** [12:44:50 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:50 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:44:55 2017-02-22] 3872: Checking sleep
+** [12:44:55 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:44:55 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:00 2017-02-22] 3872: Checking sleep
+** [12:45:00 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:00 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:05 2017-02-22] 3872: Checking sleep
+** [12:45:05 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:05 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:10 2017-02-22] 3872: Checking sleep
+** [12:45:10 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:10 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:15 2017-02-22] 3872: Checking sleep
+** [12:45:15 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:15 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:20 2017-02-22] 3872: Checking sleep
+** [12:45:20 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:20 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:25 2017-02-22] 3872: Checking sleep
+** [12:45:25 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:25 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:30 2017-02-22] 3872: Checking sleep
+** [12:45:30 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:30 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:35 2017-02-22] 3872: Checking sleep
+** [12:45:35 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:35 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:40 2017-02-22] 3872: Checking sleep
+** [12:45:40 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:40 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:45 2017-02-22] 3872: Checking sleep
+** [12:45:45 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:45 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:50 2017-02-22] 3872: Checking sleep
+** [12:45:50 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:50 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:45:55 2017-02-22] 3872: Checking sleep
+** [12:45:55 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:45:55 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:00 2017-02-22] 3872: Checking sleep
+** [12:46:00 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:00 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:05 2017-02-22] 3872: Checking sleep
+** [12:46:05 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:05 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:10 2017-02-22] 3872: Checking sleep
+** [12:46:10 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:10 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:15 2017-02-22] 3872: Checking sleep
+** [12:46:15 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:15 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:20 2017-02-22] 3872: Checking sleep
+** [12:46:20 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:20 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:25 2017-02-22] 3872: Checking sleep
+** [12:46:25 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:25 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:30 2017-02-22] 3872: Checking sleep
+** [12:46:30 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:30 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:35 2017-02-22] 3872: Checking sleep
+** [12:46:35 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:35 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:40 2017-02-22] 3872: Checking sleep
+** [12:46:40 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:40 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:45 2017-02-22] 3872: Checking sleep
+** [12:46:45 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:45 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:50 2017-02-22] 3872: Checking sleep
+** [12:46:50 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:50 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:46:55 2017-02-22] 3872: Checking sleep
+** [12:46:55 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:46:55 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:00 2017-02-22] 3872: Checking sleep
+** [12:47:00 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:00 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:05 2017-02-22] 3872: Checking sleep
+** [12:47:05 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:05 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:10 2017-02-22] 3872: Checking sleep
+** [12:47:10 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:10 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:15 2017-02-22] 3872: Checking sleep
+** [12:47:15 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:15 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:20 2017-02-22] 3872: Checking sleep
+** [12:47:20 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:20 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:25 2017-02-22] 3872: Checking sleep
+** [12:47:26 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:26 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:31 2017-02-22] 3872: Checking sleep
+** [12:47:31 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:31 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:36 2017-02-22] 3872: Checking sleep
+** [12:47:36 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:36 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:41 2017-02-22] 3872: Checking sleep
+** [12:47:41 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:41 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:46 2017-02-22] 3872: Checking sleep
+** [12:47:46 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:46 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:51 2017-02-22] 3872: Checking sleep
+** [12:47:51 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:51 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:47:56 2017-02-22] 3872: Checking sleep
+** [12:47:56 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:47:56 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:01 2017-02-22] 3872: Checking sleep
+** [12:48:01 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:01 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:06 2017-02-22] 3872: Checking sleep
+** [12:48:06 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:06 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:11 2017-02-22] 3872: Checking sleep
+** [12:48:11 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:11 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:16 2017-02-22] 3872: Checking sleep
+** [12:48:16 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:16 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:21 2017-02-22] 3872: Checking sleep
+** [12:48:21 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:21 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:26 2017-02-22] 3872: Checking sleep
+** [12:48:26 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:26 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:31 2017-02-22] 3872: Checking sleep
+** [12:48:31 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:31 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:36 2017-02-22] 3872: Checking sleep
+** [12:48:36 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:36 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:41 2017-02-22] 3872: Checking sleep
+** [12:48:41 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:41 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:46 2017-02-22] 3872: Checking sleep
+** [12:48:46 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:46 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:51 2017-02-22] 3872: Checking sleep
+** [12:48:51 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:51 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:48:56 2017-02-22] 3872: Checking sleep
+** [12:48:56 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:48:56 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:01 2017-02-22] 3872: Checking sleep
+** [12:49:01 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:01 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:06 2017-02-22] 3872: Checking sleep
+** [12:49:06 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:06 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:11 2017-02-22] 3872: Checking sleep
+** [12:49:11 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:11 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:16 2017-02-22] 3872: Checking sleep
+** [12:49:16 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:16 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:21 2017-02-22] 3872: Checking sleep
+** [12:49:21 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:21 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:26 2017-02-22] 3872: Checking sleep
+** [12:49:26 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:26 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:31 2017-02-22] 3872: Checking sleep
+** [12:49:31 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:31 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:36 2017-02-22] 3872: Checking sleep
+** [12:49:36 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:36 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:41 2017-02-22] 3872: Checking sleep
+** [12:49:41 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:41 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:46 2017-02-22] 3872: Checking sleep
+** [12:49:46 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:46 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:51 2017-02-22] 3872: Checking sleep
+** [12:49:51 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:51 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:49:56 2017-02-22] 3872: Checking sleep
+** [12:49:56 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:49:56 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:50:01 2017-02-22] 3872: Checking sleep
+** [12:50:01 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:50:01 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:50:06 2017-02-22] 3872: Checking sleep
+** [12:50:06 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:50:06 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:50:11 2017-02-22] 3872: Checking sleep
+** [12:50:11 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:50:11 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:50:16 2017-02-22] 3872: Checking sleep
+** [12:50:16 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:50:16 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:50:21 2017-02-22] 3872: Checking sleep
+** [12:50:21 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:50:21 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:50:26 2017-02-22] 3872: Checking sleep
+** [12:50:26 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:50:26 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:50:31 2017-02-22] 3872: Checking sleep
+** [12:50:31 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:50:31 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:50:36 2017-02-22] 3872: Checking sleep
+** [12:50:36 2017-02-22] 3872: Sleeping for 5.0 seconds
+** [12:50:36 2017-02-22] 3872: resque-1.27.2: Waiting for sleep
+** [12:50:41 2017-02-22] 3872: Checking sleep
+** [12:50:41 2017-02-22] 3872: Sleeping for 5.0 seconds
