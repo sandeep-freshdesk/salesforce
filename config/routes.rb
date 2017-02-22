@@ -1,4 +1,7 @@
+  require 'resque/server'
   AutopilotApp::Application.routes.draw do
+
+  mount Resque::Server.new, at: "/resque"
   get "sessions/new"
 
 

@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.2'
+#gem "rails","3.2.22.4"
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -38,6 +39,7 @@ gem "koala", "~> 1.10.0rc" # Facebook API
 
 gem "httparty"
 gem 'force'
+gem 'resque' # for background jobs
 
 #gem 'databasedotcom'    #salesforce api call
 #gem 'databasedotcom-rails'  #salesforce api call

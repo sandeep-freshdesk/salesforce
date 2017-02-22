@@ -20,10 +20,12 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(params[:user])
 		if @user.save
+			Resque.enqueue(Sleeper, 15)			
 			sign_in @user
-			flash[:success] = "Welcome to the Sample App!"
+			flash[:success] = "sign up done!, Welcome to the Sample App!"
 			redirect_to @user
-		else
+		else	
+			flash[:success] = "sign up failed"
 			@title = "Sign up"
 			render 'new'
 		end
